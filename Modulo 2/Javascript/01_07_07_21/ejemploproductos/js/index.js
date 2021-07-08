@@ -31,9 +31,9 @@ function cambioTexto(num) {
 function cambioClase()
 {
     var boton = document.getElementById('btncambioclase');
-    boton.classList.add('btn-dark');
+    //boton.classList.add('btn-dark');
     //boton.classList.remove('btn-primary');
-    //boton.classList.toggle('btn-primary');
+    boton.classList.toggle('btn-primary');
 }
 
 function cambioAtributo(num){
