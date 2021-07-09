@@ -65,6 +65,23 @@
           <iframe  id="iframevideo" width="560" height="315" src="https://www.youtube.com/embed/xnWtGNiG2lg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="container">
+      
+      <button onclick="sumar()" class="btn btn-secondary"> sumar </button>
+      <br>
+      <h1 id="resultado" name="resultado">El Resultado</h1>
+    </div>
+    <script>
+      function sumar()
+      {
+        var num1, num2, resultado, resultadonum;;
+        num1 = 6
+        num2 = 1
+        resultado = document.getElementById('resultado');
+        resultado.innerHTML = num1 + num2;
+      }
+    </script>
+
     </main>
     <footer>
 
