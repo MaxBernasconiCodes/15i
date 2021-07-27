@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Francesc Ricart" />
+	<title>Ejercicio condicionales - nivel principiante</title>
+</head>
+
+<body>
+
+	<script>
+		var usuario = prompt("Ingrese su Usuario");
+		var contrasena = prompt("Ingrese su Contraseña");
+
+			// && es "Y", o sumatoria de condiciones
+			// || es "O", y es disyuncion de condiciones
+		if (usuario == "Admin" && (contrasena == "1234" || contrasena == "asdf")) 
+			{
+				document.write("El Admin Ingreso");				
+			}
+		else if( usuario == "User")
+		{
+			document.write("El Usuario Ingreso");	
+		}
+
+
+	</script>
+
+</body>
+
+</html>

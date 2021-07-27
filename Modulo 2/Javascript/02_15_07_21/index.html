@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Listado de alumnos</h1>
+    <ul>
+        <li id="1"></li>
+        <li id="2"></li>
+        <li id="3"></li>
+        <li id="4"></li>
+        <li id="5"></li>
+        <li id="6"></li>
+        <li id="7"></li>
+        <li id="8"></li>
+        <li id="9"></li>
+        <li id="10"></li>
+
+    </ul>
+
+    <button onclick="importar()">Importar</button>
+    <datalist>
+        <option id="op1" value="Diana"/>
+        <option id="op2" value="Juan"/>
+        <option id="op3" value="Jesus"/>
+        <option id="op4" value="Pedro"/>
+        <option id="op5" value="Maxi"/>
+        <option id="op6" value="Diego"/>
+        <option id="op7" value="Diego2"/>
+        <option id="op8" value="Diego3"/>
+        <option id="op9" value="Diego4"/>
+        <option id="op10" value="Messi"/>
+    </datalist>
+
+    <h1>Ejercicio 1</h1>
+    <button onclick="puedeConducir()">Prueba de conducir</button>
+    <script>
+        
+        function importar()
+        {
+            for(var i = 1; i<=10; i++)
+            {
+                var dato = document.getElementById('op'+ i).value;
+                document.getElementById(i).innerHTML = dato;
+            }
+        }
+
+        function puedeConducir()
+        {
+            console.clear();
+            var edad = 16;
+            if(edad >= 18)
+            {
+                console.log('Puede Conducir');
+            }
+            else{
+                console.log('No puede Conducir');
+            }
+        }
+
+        function evaluarNota()
+        {
+            var nota = 4;
+            switch(nota){
+                case 0:
+                case 1:
+                case 2:
+                console.log('Muy Deficiente');
+                break;
+                case 3:
+                case 4:
+                console.log('Insuficiente');
+                break;
+            }
+        }
+    </script>
+
+
+
+    <script>
+        var variable1 = 1;
+
+        if (variable1 == 0) {
+            console.log("Usted eligio opcion 0");
+        }
+        else if (variable1 == 1) {
+            console.log("Usted eligio opcion 1");
+        }
+        else if (variable1 == 2) {
+            console.log("Usted eligio opcion 2");
+        }
+        else if (variable1 == 3) {
+            console.log("Usted eligio opcion 3");
+        }
+        else if (variable1 == 4) {
+            console.log("Usted eligio opcion 4");
+        }
+        else {
+            console.log("incorrecto");
+        }
+
+        switch (variable1) {
+            case 1:
+                console.log("Opcion 1");
+                break;
+            case 2:
+                console.log("Opcion 2");
+                break;
+            case 3:
+                console.log("Opcion 3");
+                break;
+            case 4:
+                console.log("Opcion 4");
+                break;
+            case 5:
+                console.log("Opcion 5");
+                break;
+            case 6:
+                console.log("Opcion 6");
+                break;
+            default:
+                console.log("Opcion Incorrecta");
+                break;
+        }
+
+        // bucles
+
+        var contador = 0;
+        var multiplo = 4;
+        var seguir = true;
+
+        while (seguir) {
+            console.log(multiplo + " x " + contador + " = " + multiplo * contador);
+            contador++;
+            if (contador == 8) {
+                seguir = false;
+            }
+        }
+
+        var condicion = false;
+        var contador2 = 0;
+
+        /////////////////////////////////////////////////////
+        do {
+            console.log("Se ejecuto la vez " + contador2);
+            contador2++;
+            if (contador2 == 10) {
+                condicion = false;
+            }
+        }
+        while (condicion)
+        console.log("Finalizado el bucle");
+        /////////////////////////////////////////////
+
+        console.log("valor de X = " + 0);
+        console.log("valor de X = " + 1);
+        console.log("valor de X = " + 2);
+        console.log("valor de X = " + 3);
+        console.log("valor de X = " + 4);
+        console.log("valor de X = " + 5);
+        console.log("valor de X = " + 6);
+        console.log("valor de X = " + 7);
+        console.log("valor de X = " + 8);
+        console.log("valor de X = " + 9);
+        console.log("valor de X = " + 10);
+
+
+
+
+        var x = 0;
+        while(x <= 10) 
+        {
+            console.log("valor de X = " + x);
+            x++;
+        }
+
+        var texto = "Ya esta";
+        var largo = texto.length;
+        console.log(largo);
+
+        for(var i = 0; i<=largo; i++)
+        {
+            console.log(texto[i]);
+        }
+
+
+        console.log("Salida de bucle");
+        console.log("Valor final de i = " + x);
+    </script>
+</body>
+
+</html>
