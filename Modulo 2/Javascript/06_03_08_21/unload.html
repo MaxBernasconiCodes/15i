@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black;">
+    <button onclick="addUsuario()">Clik</button>
+    <button onclick="testeo()">Test</button>
+    <ul id="listadoUsuarios" style="color: blanchedalmond;">
+
+    </ul>
+    <script>
+        const usuarios = [];
+
+        function addUsuario()
+        {
+            let nuevoUsuario = solicitarDatos();
+            usuarioALista(nuevoUsuario);
+            renderizarUsuario(nuevoUsuario);
+        }
+
+        function testeo()
+        {
+            let nuevoUsuario = solicitarDatos();
+            console.log(nuevoUsuario);
+        }
+        function solicitarDatos()
+        {
+            let nombre = prompt('Ingrese el nombre');
+            let apellido = prompt('Ingrese el apellido');
+            let nuevoUsuario = [nombre, apellido];
+            return nuevoUsuario;
+        }
+
+         function usuarioALista(nuevoUsuario)
+         {
+             usuarios.push(nuevoUsuario);
+             console.log(usuarios);
+         }
+
+         function renderizarUsuario(nuevoUsuario)
+         {
+             let lista = document.getElementById('listadoUsuarios');
+             let item = document.createElement('li');
+             item.append(nuevoUsuario[0] + ' ' + nuevoUsuario[1]);
+             lista.append(item);
+         } 
+
+    </script>
+</body>
+
+</html>

@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicos</title>
+    <style>
+    </style>
 </head>
-
 <body>
     <h1>Ejercicios Condicionales y Buscles</h1>
+
     <script>
         ////////////////////////////////////////////////////////////////
         //////////////Ejercicios de Prácticas con variables/////////////
@@ -220,11 +222,87 @@
        //     resultado += prompt('escriba un texto') + '-';
        // }
        // document.write(resultado);
-        
+
         //Fin Ejercicio 3
 
         // Ejercicio 4
         // 4- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
+
+        //  var sumatoria = 0;
+        //  var seguir = true;
+        //  do
+        //  {
+        //     valor = prompt('ingrese un numero');
+
+        //     if(valor == null)
+        //     {
+        //      seguir = false;
+        //     }
+        //     else if (isNaN(parseInt(valor))){
+        //        alert('Ingrese un valor valido');
+        //     }
+        //     else{
+        //         sumatoria += parseInt(valor);
+        //     }
+        //  }
+        //  while(seguir)
+        //  document.write(sumatoria);
+
+//       5- Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad).
+
+// El algoritmo para calcular la letra del dni es el siguiente :
+
+// El número debe ser entre 0 y 99999999
+// Debemos calcular el resto de la división entera entre el número y el número 23.
+// Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
+// Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
+// Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+
+
+
+//////////////////////////////////////////////////////////////////////////
+let afiliados = [];
+let afiliado1 = [];
+let afiliado2 = [];
+afiliados[0]  =  afiliado1;
+afiliados[1]  =  afiliado2;
+afiliados[0][0] = "Nombre 1";
+afiliados[0][1] = "Apellido 1";
+afiliados[0][2] = "Dni 1";
+afiliados[1][0] =  "Nombre 2";
+afiliados[1][1] = "Apellido 2";
+afiliados[1][2] = "Dni 2";
+
+// let continuar = true;
+// while(continuar)
+// {
+//     let nombre = prompt('Ingrese el nombre del afiliado');
+//     let apellido = prompt('Ingrese el apellido del afiliado');
+//     let dni = prompt('Ingrese el dni del afiliado');
+//     let afiliadnuevo = [nombre,apellido,dni];
+//     afiliados.push(afiliadnuevo);
+//     continuar = confirm('¿desea continuar?');
+// }
+
+for(let i = 0; i < 5; i++)
+{
+    //antes del ciclo chico
+    document.write(' Fila:' + i + ': |')
+
+    for(let j = 0; j < 6; j++)
+    {
+        document.write(  i.toString() + j.toString() + " |")
+    }
+
+    //despues del ciclo chico
+    document.write(' <hr>')
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
 
     </script>
 </body>
