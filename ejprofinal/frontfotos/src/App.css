@@ -1,0 +1,27 @@
+.App {
+  position: relative;
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ModalNotice{
+  position: fixed;
+  top:30%;
+  left:50%;
+  transform: translate(-50%);
+  width: 200px;
+  height: 15px;
+  padding: 2rem;
+  border: 2px solid #B0C59B;
+  border-radius: 1rem;
+  background-color: rgba(105, 115, 93, 0.95);
+}
+
+.ModalNotice.inactive{
+  display: none;
+}
+.ModalNotice.active{
+  display: flex;
+}

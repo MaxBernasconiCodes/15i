@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Evento</title>
+</head>
+<body>
+
+    <button id="btnGenerar">
+        Generar
+    </button>
+    <ul id="listado">
+    </ul>
+<script>
+    
+    let btnGenerar = document.getElementById('btnGenerar');
+    let listado = document.getElementById('listado');
+    btnGenerar.addEventListener('click',agregarElemento)
+
+
+    function generar(){
+        let resultado = Math.floor(Math.random() * 100);
+        return resultado;
+    }
+
+    function crearLi(){
+        let liNuevo = document.createElement('li');
+        let valor = generar();
+        liNuevo.append(valor);
+        return liNuevo;
+    }
+
+    function agregarElemento(){
+        listado.append(crearLi());
+    }
+
+
+
+
+    
+</script>
+    
+</body>
+</html>

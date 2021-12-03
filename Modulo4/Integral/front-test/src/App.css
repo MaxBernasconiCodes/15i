@@ -1,0 +1,48 @@
+.activo{
+  text-decoration: none;
+  font-weight: 800;
+  color: #000;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+html {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(217deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 50%), linear-gradient(107deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 70%), linear-gradient(336deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 60%);
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-size: 0.5rem;
+}
+.box {
+  width: 800px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.card-container {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem;
+}
+
+h1, p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: #FFF;
+}
+
+p {
+  font-size: 1em;
+}

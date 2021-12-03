@@ -1,0 +1,29 @@
+input, select{
+    margin: 6px;
+    padding: 4px;
+    border: solid 2px rgb(124, 175, 203);
+    border-radius: 15px;
+}
+
+button{
+    margin: 6px;
+    background: rgb(124, 175, 203);
+    border: solid 2px rgba(118, 196, 254,0.2);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(118, 196, 254,0.8);
+}
+
+
+.regForm{
+margin:auto;
+margin-top: 2rem;
+max-width: 25rem;
+display:flex;
+flex-direction: column;
+padding: 1rem;
+background-color: rgba(118, 196, 254,0.2);
+border: solid 2px #000;
+border-radius: 15px;
+}
